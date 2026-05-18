@@ -1,0 +1,32 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "1. 파이썬 백엔드 실행",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/app.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "2. 크롬 브라우저 접속",
+            "url": "http://localhost:5000",
+            "webRoot": "${workspaceFolder}"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "🚀 급식 앱 한 번에 실행하기",
+            "configurations": [
+                "1. 파이썬 백엔드 실행",
+                "2. 크롬 브라우저 접속"
+            ],
+            "stopAll": true
+        }
+    ]
+}
